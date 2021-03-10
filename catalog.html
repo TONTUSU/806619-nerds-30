@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="page inner-page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/content/nerds-logo.svg" width="160" height="66" alt="Логотип сайта Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a class="cart-link" href="#">Корзина</a>
+    </nav>
+    <h1>Магазин готовых шаблонов</h1>
+  </header>
+  <main class="wrapper">
+    <h1>Каталог</h1>
+    <section class="filter">
+      <h2>Фильтр</h2>
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset>
+          <legend><label  for="cost-range">Стоимость:</label></legend>
+          <input type="range" id="cost-range" min="0" max="20000" step="500" value="15000"><br>
+          <label>От<input type="text" name="min-cost" value="0"> <span>-</span></label>
+          <label>До<input type="text" name="max-cost" value="15000"></label>
+        </fieldset>
+        <fieldset >
+          <legend><label for="grid">Сетка:</label></legend>
+          <ul>
+            <li><label><input type="radio" name="grid-radio" id="grid" value="adaptive">Адаптивная</label></li>
+            <li><label><input type="radio" name="grid-radio" value="fixed">Фиксированная</label></li>
+            <li><label><input type="radio" name="grid-radio" value="rubber">Резиновая</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend><label for="features">Особенности:</label></legend>
+          <ul>
+            <li><label><input type="checkbox" id="features" value="slider">Слайдер</label></li>
+            <li><label><input type="checkbox" value="features-block">Блок преимуществ</label></li>
+            <li><label><input type="checkbox" value="news">Новости</label></li>
+            <li><label><input type="checkbox" value="Gallery">Галерея</label></li>
+            <li><label><input type="checkbox" value="cart">Корзина</label></li>
+          </ul>
+        </fieldset>
+        <button class="button filter-button" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="catalog">
+      <h2>Сортировка</h2>
+      <h3>Сортировать:</h3>
+      <ul class="sort-list">
+        <li class="sort-item" ><a href="#">По цене</a></li>
+        <li class="sort-item" ><a href="#">По типу</a></li>
+        <li class="sort-item" ><a href="#">По названию</a></li>
+        <li class="sort-item" ><a href="#">По убыванию</a></li>
+        <li class="sort-item" ><a href="#">По возрастанию</a></li>
+      </ul>
+      <ul class="goods-list">
+        <li class="goods-item">
+          <img src="img/preview-sedona.png" width="388" height="607" alt="Сайт 'Седона'">
+          <div class="goods-info-panel">
+            <a href="#">Sedona</a>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="goods-item">
+          <img src="img/preview-pink.png" width="358" height="578" alt="Сайт 'Пинк'">
+          <div class="goods-info-panel">
+            <a href="#">Pink app</a>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="goods-item">
+          <img src="img/preview-borodinski.png" width="358" height="578" alt="Сайт 'Бородинский'">
+          <div class="goods-info-panel">
+            <a href="#">Borodinski</a>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="goods-item">
+          <img src="img/preview-mishka.png" width="358" height="578" alt="Сайт 'Мишка'">
+          <div class="goods-info-panel">
+            <a href="#">Mishka</a>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="goods-item">
+          <img src="img/preview-A+.png" width="358" height="578" alt="Сайт 'A+'">
+          <div class="goods-info-panel">
+            <a href="#">A+</a>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li class="goods-item">
+          <img src="img/preview-kvast.png" width="358" height="578" alt="Сайт 'Кваст'">
+          <div class="goods-info-panel">
+            <a href="#">Kvast</a>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 ₽</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="control-panel">
+        <li class="control-item"><a class="button control-button" href="#">1</a></li>
+        <li class="control-item"><a class="button control-button" href="#">2</a></li>
+        <li class="control-item"><a class="button control-button" href="#">3</a></li>
+        <li class="control-item"><a class="button control-button" href="#">Следующая</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <section class="footer-location">
+      <h2>Как нас найти?</h2>
+      <img src="img/content/map.png" width="1440" height="416" alt="">
+      <div class="footer-contacts">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. <a class="footer-phone" href="tel:+78122757575"> +7 (812) 275-75-75</a></p>
+        <a class="write-us-button button" href="#">Напишите нам</a>
+      </div>
+    </section>
+    <section class="footer-soc">
+      <h2>Социальные сети</h2>
+      <ul class="soc-list">
+        <li><a class="soc-button" href="#">Вконтакте</a></li>
+        <li><a class="soc-button" href="#">Фейсбук</a></li>
+        <li><a class="soc-button" href="#">Инстаграм</a></li>
+      </ul>
+    </section>
+    <section class="lets-friend">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+</body>
+</html>
