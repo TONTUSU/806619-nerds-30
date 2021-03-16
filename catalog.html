@@ -28,18 +28,17 @@
     <h1>Магазин готовых шаблонов</h1>
   </header>
   <main class="wrapper">
-    <h1>Каталог</h1>
     <section class="filter">
       <h2>Фильтр</h2>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
-          <legend><label  for="cost-range">Стоимость:</label></legend>
+          <legend>Стоимость:</legend>
           <input type="range" id="cost-range" min="0" max="20000" step="500" value="15000"><br>
           <label>От<input type="text" name="min-cost" value="0"> <span>-</span></label>
           <label>До<input type="text" name="max-cost" value="15000"></label>
         </fieldset>
         <fieldset >
-          <legend><label for="grid">Сетка:</label></legend>
+          <legend>Сетка:</legend>
           <ul>
             <li><label><input type="radio" name="grid-radio" id="grid" value="adaptive">Адаптивная</label></li>
             <li><label><input type="radio" name="grid-radio" value="fixed">Фиксированная</label></li>
@@ -47,7 +46,7 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend><label for="features">Особенности:</label></legend>
+          <legend>Особенности:</legend>
           <ul>
             <li><label><input type="checkbox" id="features" value="slider">Слайдер</label></li>
             <li><label><input type="checkbox" value="features-block">Блок преимуществ</label></li>
@@ -60,15 +59,17 @@
       </form>
     </section>
     <section class="catalog">
-      <h2>Сортировка</h2>
-      <h3>Сортировать:</h3>
-      <ul class="sort-list">
-        <li class="sort-item" ><a href="#">По цене</a></li>
-        <li class="sort-item" ><a href="#">По типу</a></li>
-        <li class="sort-item" ><a href="#">По названию</a></li>
-        <li class="sort-item" ><a href="#">По убыванию</a></li>
-        <li class="sort-item" ><a href="#">По возрастанию</a></li>
-      </ul>
+      <h2>Каталог</h2>
+      <div class="sort">
+        <h3>Сортировать:</h3>
+        <ul class="sort-list">
+          <li class="sort-item" ><a href="#">По цене</a></li>
+          <li class="sort-item" ><a href="#">По типу</a></li>
+          <li class="sort-item" ><a href="#">По названию</a></li>
+          <li class="sort-item" ><a href="#">По убыванию</a></li>
+          <li class="sort-item" ><a href="#">По возрастанию</a></li>
+        </ul>
+      </div>
       <ul class="goods-list">
         <li class="goods-item">
           <img src="img/preview-sedona.png" width="388" height="607" alt="Сайт 'Седона'">
